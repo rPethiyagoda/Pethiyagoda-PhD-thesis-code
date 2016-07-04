@@ -49,7 +49,7 @@ disp(['Approx mem used by preconditioner ',num2str(mem),'Gbs']);
 yDash0 = [repmat([x0;ones(N,1)],M,1);zeros(M*(N+1),1)];
 
 % The folder that the surface data is saved to
-folder = './Stats/Dipole Fr09/';
+folder = './Stats/Dipole-Fr09/';
 % Calculate solutions
 computeSurface(M,N,deltaX,deltaY,x0,source,epsilon,singType,Fr,intMethod,n,band,preconType,yDash0,folder);
 
