@@ -8,7 +8,7 @@ M = 237;                %
 AllEps = [0.02:0.06:0.92];
 
 % The folder that the surface data is saved to  
-folder = './Stats/Dipole Fr09/';
+folder = './Stats/Dipole-Fr09/';
 % Calculate solutions
 [peaks,gofs] = measureAllPeaks(folder,N,M,Fr,AllEps,singType);
 
