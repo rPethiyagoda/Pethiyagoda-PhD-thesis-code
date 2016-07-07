@@ -10,25 +10,24 @@ and
 Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2016). Spectrograms of ship wakes: identifying linear and nonlinear wave signals. Submitted to J. Fluid Mech.
 
 ------------------------------------------------------------------------
-PROGRAM REQUIREMENTS
+## PROGRAM REQUIREMENTS
 ------------------------------------------------------------------------
 
-Required:
---------------------------------
+#### Required:
+
 
 Matlab
 
 Sundials KINSOL (sundialsTB Matlab toolbox): https://computation.llnl.gov/casc/sundials/main.html
 
-Optional:
-------------------------------------------------------------------------
+#### Optional:
 
 Intel MKL
 
 CUDA 5 compatible GPU
 
 ------------------------------------------------------------------------
-Compiling mex files
+## Compiling mex files
 ------------------------------------------------------------------------
 
 If the included binaries fail, there is an example makefile used to compile the mex files.
@@ -48,36 +47,51 @@ solveDense.c
 In order to compile factorBand.c run 'make NAME=factorBand' for example.
 
 ------------------------------------------------------------------------
-SCRIPT FILES - run these
+## SCRIPT FILES - run these
 ------------------------------------------------------------------------
 
+#### 2014a paper
 runJCP.m 	  - Generates figure 5(b) of Pethiyagoda et al. (2014a)
 
+#### 2014b paper
 runJFMwakeAngle.m - calculates the apparent wake angle for a flow pasta dipole with F=0.9 (part of figure 7(b) from Pethiyagoda et al. (2014b))
 
 runJFMDipole.m 	  - Generates solutions to be used by runJFMwakeAngle.m
 
+#### 2016 paper
+
+runSpec.m - Generates figure 2(b) of Pethiyagoda et al. (2016)
+
 ------------------------------------------------------------------------
-OTHER MAIN FILES
+## OTHER MAIN FILES
 ------------------------------------------------------------------------
 
+#### 2014a paper
 computeSurface.m     - Computes the solution surfaces
 
 BIFunction.m	       - The system of nonlinear equations
 
 plotSurf.m	         - Plots a surface
 
-measureAllPeaks.m    - Measure the apparent wake angle of a series solutions
-
-getPeakAngle.m	     - Measure the apparent wake angle of a single solution
-
 LinearBlockJacPre.m  - Create the preconditioner matrix (dense sotrage)
 
 LinearBandJacPre.m   - Create the preconditioner matrix (banded sotrage)
 
+#### 2014b paper
+
+measureAllPeaks.m    - Measure the apparent wake angle of a series solutions
+
+getPeakAngle.m	     - Measure the apparent wake angle of a single solution
+
+#### 2016 paper
+
+linearZetaWaveTrain.m - Computes the wave train for flow pasta pressure distribution
+
 ------------------------------------------------------------------------
-AUXILIARY FILES
+## AUXILIARY FILES
 ------------------------------------------------------------------------
+
+#### 2014a paper
 
 baseMult.cu	      - Perform the matrix vector product for the B/C sub matricies of the preconditioner on the GPU
 
@@ -115,5 +129,11 @@ solveDense.maxa64 - Solve Ax=b with dense storage (intel MKL, compiled)
 
 startup_STB.m	    - Initiate KINSol in MATLAB
 
+#### 2016 paper
 
+The following functions used for computing spectrograms and have been taken from http://tftb.nongnu.org/ and modified
+
+tfrrsp.m - Computes the spectragram for a signal
+
+tftb_window.m - Generates the window function for use with tfrrsp.m
 
