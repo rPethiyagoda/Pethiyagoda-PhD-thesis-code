@@ -2,8 +2,8 @@ function [Func,Flag] = BIFunction(variables,source,epsilon,singType,M,N,deltaX,d
 % BIFunction The function that needs to be minimised. Takes
 % the following inputs
 % variables - vector of zetaX
-% source - a vector of source/sink positions
-% epsilon - a vector of epsilons to match the given sources
+% source - a vector of source/sink position
+% epsilon - strength of the source/sink
 % singType - (bool) The type of singularity, true=source, false=dipole
 % M,N - the number of nodes in the y and x directions respectively
 % deltaX,deltaY - the distance between nodes in the x and y directions
