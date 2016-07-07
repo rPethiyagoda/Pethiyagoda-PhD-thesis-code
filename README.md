@@ -3,21 +3,25 @@ Sample code used to generate figures from:
 
 Pethiyagoda, R., McCue, S. W., Moroney, T. J., & Back, J. M. (2014a). Jacobian-free Newton-Krylov methods with GPU acceleration for computing nonlinear ship wave patterns. J. Comput. Phys., 269, 297--313.
 
+Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2014b). What is the apparent angle of a Kelvin ship wave pattern? J. Fluid Mech., 758, 468--485.
+
 and
 
-Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2014b). What is the apparent angle of a Kelvin ship wave pattern? J. Fluid Mech., 758, 468--485.
+Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2016). Spectrograms of ship wakes: identifying linear and nonlinear wave signals. Submitted to J. Fluid Mech.
 
 ------------------------------------------------------------------------
 PROGRAM REQUIREMENTS
 ------------------------------------------------------------------------
 
 Required:
+------------------------------------------------------------------------
 
 Matlab
 
 Sundials KINSOL (sundialsTB Matlab toolbox): https://computation.llnl.gov/casc/sundials/main.html
 
 Optional:
+------------------------------------------------------------------------
 
 Intel MKL
 
