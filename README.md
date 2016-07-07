@@ -33,7 +33,6 @@ CUDA 5 compatible GPU
 If you wish to use the Intel MKL library you must use the mex files. If the included binaries fail, there is an example makefile used to compile the mex files. The directories for MATLAB and the Intel compiler must be changed to reflect your system.
 
 The mex source files are:
-
 - factorBand.c
 - factorDense.c
 - solveBand.c
