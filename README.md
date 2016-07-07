@@ -18,7 +18,7 @@ Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2016). Spectrograms of ship wak
 
 Matlab
 
-Sundials KINSOL (sundialsTB Matlab toolbox): https://computation.llnl.gov/casc/sundials/main.html
+Sundials KINSOL (sundialsTB Matlab toolbox): http://computation.llnl.gov/projects/sundials-suite-nonlinear-differential-algebraic-equation-solvers
 
 #### Optional:
 
