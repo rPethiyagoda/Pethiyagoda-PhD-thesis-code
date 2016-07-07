@@ -34,13 +34,10 @@ If you wish to use the Intel MKL library you must use the mex files. If the incl
 
 The mex source files are:
 
-factorBand.c
-
-factorDense.c
-
-solveBand.c
-
-solveDense.c
+- factorBand.c
+- factorDense.c
+- solveBand.c
+- solveDense.c
 
 In order to compile factorBand.c run 'make NAME=factorBand' for example.
 
