@@ -79,7 +79,7 @@ getPeakAngle.m	     - Measure the apparent wake angle of a single solution
 
 #### 2016 paper
 
-linearZetaWaveTrain.m - Computes the wave train for flow pasta pressure distribution
+linearZetaWaveTrain.m - Computes the wave train for flow past a pressure distribution
 
 ------------------------------------------------------------------------
 ## AUXILIARY FILES
