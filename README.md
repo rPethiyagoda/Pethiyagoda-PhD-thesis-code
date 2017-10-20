@@ -7,7 +7,7 @@ Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2014b). What is the apparent an
 
 and
 
-Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2016). Spectrograms of ship wakes: identifying linear and nonlinear wave signals. Submitted to J. Fluid Mech.
+Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2016). Spectrograms of ship wakes: identifying linear and nonlinear wave signals. J. Fluid Mech., 811, 189--209.
 
 ------------------------------------------------------------------------
 ## PROGRAM REQUIREMENTS
