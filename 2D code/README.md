@@ -1,5 +1,5 @@
 
-# Pethiyagoda-PhD-thesis-code
+# 2D code
 Sample code used to generate a figure from:
 
 Pethiyagoda, R., McCue, S. W., & Moroney, T. J. (2017). Efficient computation of two‐dimensional steady free‐surface flows. Int. J. Num. Meth. in Fluids.
