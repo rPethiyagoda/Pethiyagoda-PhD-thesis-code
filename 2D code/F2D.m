@@ -47,11 +47,12 @@ else
     Func1 = Fr^2*exp(3*tauHalf).*tauHalfDiff+sin(thetaHalf);
     
     % Boundary integral equation
+    bottomf = 1 + (2*exp(modi*phiHalf)+b+1)./(2*(b-1)).*log((exp(modi*phiHalf)+1)./(exp(modi*phiHalf)+b));
     Func2 = zeros(N-1,1);
     parfor i=1:(N-1)
         integrand = (theta-thetaHalf(i))./(1-exp(modi*(phiHalf(i)-phi)));%
         integral = sum(weightP.*integrand);
-        Func2(i) = tauHalf(i) - 1 -(2*exp(modi*phiHalf(i))+b+1)/(2*(b-1))*log((exp(modi*phiHalf(i))+1)/(exp(modi*phiHalf(i))+b))...
+        Func2(i) = tauHalf(i) - bottomf(i)...
             -beta/alpha*integral-1/pi*thetaHalf(i)*log(abs((exp(modi*phi(end))-exp(modi*phiHalf(i)))/(exp(modi*phi(1))-exp(modi*phiHalf(i)))));
     end
 
